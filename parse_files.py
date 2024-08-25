@@ -6,7 +6,9 @@ all_files = [] #хранит все найденные файлы
 
 os.chdir(PATH_x)
 def deep_search():
+    
     global all_files
+    
     for i in os.listdir():
         
         if os.path.isdir(i):
@@ -22,8 +24,8 @@ def deep_search():
     
 def main():
     deep_search()
-
+    return all_files
 
 if __name__ == "__main__":
-    main()
-    print(all_files)
+    print(main())
+    # print(all_files)
